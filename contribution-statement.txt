@@ -1,0 +1,12 @@
+ITT208 - INTERNET AUTHORING I
+MAJOR PROJECT - Jamaica Community Development Association (JCDA) Website
+
+Contribution Statement
+
+Student 1: Andre Passley
+Student ID: 20232857
+Contribution: Assisted with planning the website structure, developing the HTML pages, styling the website with CSS, adding JavaScript validation, testing the final project locally and preparing the final zipped submission.
+
+Student 2: Shurniedayle Porteous
+Student ID: 
+Contribution: Assisted with planning the website structure, developing the HTML pages, styling the website with CSS, content review, page testing, checking links/images.

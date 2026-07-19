@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - JCDA</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header introducing the organization on all five pages -->
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo-link" aria-label="Go to JCDA Home Page">
+                <img src="images/logo-circle-jcda.png" alt="Jamaica Community Development Association logo" class="logo">
+            </a>
+            <div>
+                <h1>Jamaica Community Development Association</h1>
+                <p>Building stronger Jamaican communities through service, education and outreach.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Menu linking all five pages together -->
+    <button class="menu-button" id="menuButton" type="button" aria-label="Open or close navigation menu">☰ Menu</button>
+    <nav id="mainNav">
+        <a href="index.html" class="">Home</a>
+        <a href="about.html" class="">About Us</a>
+        <a href="events.html" class="">Events</a>
+        <a href="projects.html" class="">Projects/Gallery</a>
+        <a href="contact.html" class="active">Contact</a>
+    </nav>
+
+    <main>
+        <!-- Contact page with the organization's contact information and contact form -->
+        <section>
+            <h2>Contact JCDA</h2>
+            <p>
+                Visitors can contact JCDA to ask about volunteering, donations, upcoming events or community projects.
+            </p>
+            <div class="image-navigation">
+                <img src="images/hero-contact.jpg" alt="Customer service support representative answering calls" width="900" height="360" class="real-photo banner-photo">
+                <a class="image-side image-left" href="projects.html" aria-label="Previous page: Projects/Gallery" title="Previous page: Projects/Gallery">
+                    <span>‹ Projects/Gallery</span>
+                </a>
+                <a class="image-side image-right" href="index.html" aria-label="Next page: Home" title="Next page: Home">
+                    <span>Home ›</span>
+                </a>
+            </div>
+            <p class="hero-note">Tip: Click the left side of the image to go to Projects/Gallery, or click the right side to go to Home.</p>
+        </section>
+
+        <section>
+            <h2>Organization Contact Details</h2>
+            <p><strong>Address:</strong> 17 Worthington Avenue, Kingston 5, Jamaica</p>
+            <p><strong>Phone:</strong> (876) 555-5555</p>
+            <p><strong>Email:</strong> info@jcda.org</p>
+        </section>
+
+        <section>
+            <h2>Opening Hours</h2>
+            <table>
+                <tr>
+                    <th>Day</th>
+                    <th>Opening Hours</th>
+                </tr>
+                <tr>
+                    <td>Monday - Friday</td>
+                    <td>9:00 a.m. - 5:00 p.m.</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>10:00 a.m. - 2:00 p.m.</td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td>Closed</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Contact form with JavaScript validation -->
+        <section>
+            <h2>Send a Message</h2>
+            <form id="contactForm" action="#" method="post" novalidate>
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name">
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address">
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" placeholder="Enter the message subject">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="6" placeholder="Type your message here"></textarea>
+
+                <button type="submit">Submit Message</button>
+                <p id="formMessage" class="form-message"></p>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer appearing on all five pages -->
+    <footer>
+        <p>&copy; 2026 Jamaica Community Development Association. All rights reserved.</p>
+        <p><a href="https://www.netacad.com/" target="_blank">Cisco Networking Academy</a> is a helpful external learning resource for web and IT skills.</p>
+    </footer>
+
+    <!-- JavaScript used for menu, filtering, gallery preview and form validation -->
+    <script src="js/script.js"></script>
+</body>
+</html>

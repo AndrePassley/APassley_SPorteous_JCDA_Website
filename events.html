@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - JCDA</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header introducing the organization on all five pages -->
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo-link" aria-label="Go to JCDA Home Page">
+                <img src="images/logo-circle-jcda.png" alt="Jamaica Community Development Association logo" class="logo">
+            </a>
+            <div>
+                <h1>Jamaica Community Development Association</h1>
+                <p>Building stronger Jamaican communities through service, education and outreach.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Menu linking all five pages together -->
+    <button class="menu-button" id="menuButton" type="button" aria-label="Open or close navigation menu">☰ Menu</button>
+    <nav id="mainNav">
+        <a href="index.html" class="">Home</a>
+        <a href="about.html" class="">About Us</a>
+        <a href="events.html" class="active">Events</a>
+        <a href="projects.html" class="">Projects/Gallery</a>
+        <a href="contact.html" class="">Contact</a>
+    </nav>
+
+    <main>
+        <!-- Events page listing upcoming community events -->
+        <section>
+            <h2>Upcoming Events</h2>
+            <p>
+                JCDA uses events to bring volunteers, families and community partners together.
+            </p>
+            <div class="image-navigation">
+                <img src="images/hero-events.jpg" alt="Students viewing a youth road safety activity at a community event" width="900" height="360" class="real-photo banner-photo">
+                <a class="image-side image-left" href="about.html" aria-label="Previous page: About Us" title="Previous page: About Us">
+                    <span>‹ About Us</span>
+                </a>
+                <a class="image-side image-right" href="projects.html" aria-label="Next page: Projects/Gallery" title="Next page: Projects/Gallery">
+                    <span>Projects/Gallery ›</span>
+                </a>
+            </div>
+            <p class="hero-note">Tip: Click the left side of the image to go to About Us, or click the right side to go to Projects/Gallery.</p>
+        </section>
+
+        <!-- Event search and filter section controlled by JavaScript -->
+        <section>
+            <h2>Find an Event</h2>
+            <div class="filter-row">
+                <div>
+                    <label for="eventFilter">Filter by Category:</label>
+                    <select id="eventFilter">
+                        <option value="all">All Categories</option>
+                        <option value="environment">Environment</option>
+                        <option value="education">Education</option>
+                        <option value="youth">Youth</option>
+                        <option value="outreach">Outreach</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="eventSearch">Search Events:</label>
+                    <input type="text" id="eventSearch" placeholder="Type a word such as youth or cleanup">
+                </div>
+            </div>
+            <p id="eventCount" class="hero-note">Showing all events.</p>
+        </section>
+
+        <!-- List of events with image previews -->
+        <section>
+            <h2>Event List</h2>
+            <div class="card-row event-list" id="eventList">
+                <article class="card event-card" data-category="environment">
+                    <img src="images/event-cleanup-tree-planting.jpg" alt="Tree planting activity for the community cleanup event" class="card-image">
+                    <h3>Community Cleanup and Tree Planting Day</h3>
+                    <p><strong>Date:</strong> August 1, 2026</p>
+                    <p><strong>Location:</strong> Portmore Community Park, St. Catherine</p>
+                    <p><strong>Category:</strong> Environment</p>
+                    <p>Volunteers will clean public areas, plant trees and share environmental awareness tips.</p>
+                </article>
+                <article class="card event-card" data-category="youth">
+                    <img src="images/event-youth-skills-workshop.jpg" alt="Students speaking with a youth skills workshop facilitator" class="card-image">
+                    <h3>Youth Skills Workshop</h3>
+                    <p><strong>Date:</strong> August 8, 2026</p>
+                    <p><strong>Location:</strong> JCDA Learning Room, Kingston</p>
+                    <p><strong>Category:</strong> Youth</p>
+                    <p>Young people will learn basic communication, teamwork and digital skills.</p>
+                </article>
+                <article class="card event-card" data-category="education">
+                    <img src="images/event-back-to-school-drive.jpg" alt="School supplies prepared for back-to-school support" class="card-image">
+                    <h3>Back-to-School Supply Drive</h3>
+                    <p><strong>Date:</strong> August 15, 2026</p>
+                    <p><strong>Location:</strong> Mandeville Town Centre</p>
+                    <p><strong>Category:</strong> Education</p>
+                    <p>JCDA will collect and distribute school supplies for students who need support.</p>
+                </article>
+                <article class="card event-card" data-category="outreach">
+                    <img src="images/event-health-wellness-fair.jpg" alt="Community members attending a health and wellness outreach booth" class="card-image">
+                    <h3>Community Health and Wellness Fair</h3>
+                    <p><strong>Date:</strong> August 22, 2026</p>
+                    <p><strong>Location:</strong> Spanish Town Community Hall</p>
+                    <p><strong>Category:</strong> Outreach</p>
+                    <p>Families can access wellness information, community services and volunteer support.</p>
+                </article>
+                <article class="card event-card" data-category="outreach">
+                    <img src="images/event-family-support-registration.jpg" alt="Children and families gathered for a community support activity" class="card-image">
+                    <h3>Family Support Registration Day</h3>
+                    <p><strong>Date:</strong> August 29, 2026</p>
+                    <p><strong>Location:</strong> Montego Bay Civic Centre</p>
+                    <p><strong>Category:</strong> Outreach</p>
+                    <p>Residents can register for future care packages, workshops and family support activities.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer appearing on all five pages -->
+    <footer>
+        <p>&copy; 2026 Jamaica Community Development Association. All rights reserved.</p>
+        <p><a href="https://www.netacad.com/" target="_blank">Cisco Networking Academy</a> is a helpful external learning resource for web and IT skills.</p>
+    </footer>
+
+    <!-- JavaScript used for menu, filtering, gallery preview and form validation -->
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects/Gallery - JCDA</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header introducing the organization on all five pages -->
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo-link" aria-label="Go to JCDA Home Page">
+                <img src="images/logo-circle-jcda.png" alt="Jamaica Community Development Association logo" class="logo">
+            </a>
+            <div>
+                <h1>Jamaica Community Development Association</h1>
+                <p>Building stronger Jamaican communities through service, education and outreach.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Menu linking all five pages together -->
+    <button class="menu-button" id="menuButton" type="button" aria-label="Open or close navigation menu">☰ Menu</button>
+    <nav id="mainNav">
+        <a href="index.html" class="">Home</a>
+        <a href="about.html" class="">About Us</a>
+        <a href="events.html" class="">Events</a>
+        <a href="projects.html" class="active">Projects/Gallery</a>
+        <a href="contact.html" class="">Contact</a>
+    </nav>
+
+    <main>
+        <!-- Projects/Gallery page combining community projects and gallery images -->
+        <section>
+            <h2>Projects and Gallery</h2>
+            <p>
+                JCDA projects are focused on community improvement, education, environmental care and family support.
+            </p>
+            <div class="image-navigation">
+                <img src="images/hero-projects.jpg" alt="Young people and partners taking part in a tree planting project" width="900" height="360" class="real-photo banner-photo">
+                <a class="image-side image-left" href="events.html" aria-label="Previous page: Events" title="Previous page: Events">
+                    <span>‹ Events</span>
+                </a>
+                <a class="image-side image-right" href="contact.html" aria-label="Next page: Contact" title="Next page: Contact">
+                    <span>Contact ›</span>
+                </a>
+            </div>
+            <p class="hero-note">Tip: Click the left side of the image to go to Events, or click the right side to go to Contact.</p>
+        </section>
+
+        <!-- Project statistics -->
+        <section>
+            <h2>Project Statistics</h2>
+            <div class="stat-row">
+                <div class="stat-box">
+                    <h3>3,200+</h3>
+                    <p>Trees Planted</p>
+                </div>
+                <div class="stat-box">
+                    <h3>1050+</h3>
+                    <p>Youth Trained</p>
+                </div>
+                <div class="stat-box">
+                    <h3>542+</h3>
+                    <p>Families Assisted</p>
+                </div>
+                <div class="stat-box">
+                    <h3>9</h3>
+                    <p>Centres Renovated</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Community project cards -->
+        <section>
+            <h2>Community Projects</h2>
+            <div class="card-row">
+                <article class="card">
+                    <img src="images/gallery-community-learning-corners.jpg" alt="Students participating in a community learning corner" class="card-image">
+                    <h3>Community Learning Corners</h3>
+                    <p>Small reading and homework spaces created in community centres.</p>
+                </article>
+                <article class="card">
+                    <img src="images/gallery-youth-digital-skills-programme.jpg" alt="Youth learning digital skills in a computer lab" class="card-image">
+                    <h3>Youth Digital Skills Programme</h3>
+                    <p>Beginner technology and workplace skills training for young people.</p>
+                </article>
+                <article class="card">
+                    <img src="images/gallery-clean-community-jamaica.jpg" alt="Volunteers after a community cleanup activity" class="card-image">
+                    <h3>Clean Community Jamaica</h3>
+                    <p>Volunteer cleanups and public education on proper waste disposal.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Gallary section. Inclues image grid and gallary filter -->
+        <section>
+            <h2>Gallery</h2>
+            <p>Click any gallery image to preview it. Use the filter to view images by project type.</p>
+            <div class="filter-row">
+                <div>
+                    <label for="galleryFilter">Filter Gallery:</label>
+                    <select id="galleryFilter">
+                        <option value="all">All Images</option>
+                        <option value="education">Education</option>
+                        <option value="youth">Youth</option>
+                        <option value="environment">Environment</option>
+                        <option value="outreach">Outreach</option>
+                    </select>
+                </div>
+            </div>
+            <div class="gallery-grid" id="galleryGrid">
+                <figure class="gallery-item" data-category="education">
+                    <img src="images/gallery-community-learning-corners.jpg" alt="Students in a community learning corner" class="gallery-img real-photo" loading="lazy">
+                    <figcaption>Community Learning Corners</figcaption>
+                </figure>
+                <figure class="gallery-item" data-category="youth">
+                    <img src="images/gallery-youth-digital-skills-programme.jpg" alt="Youth learning digital skills in a computer lab" class="gallery-img real-photo" loading="lazy">
+                    <figcaption>Youth Digital Skills Programme</figcaption>
+                </figure>
+                <figure class="gallery-item" data-category="environment">
+                    <img src="images/gallery-green-spaces-project.jpg" alt="Community members supporting a green spaces project" class="gallery-img real-photo" loading="lazy">
+                    <figcaption>Green Spaces Project</figcaption>
+                </figure>
+                <figure class="gallery-item" data-category="outreach">
+                    <img src="images/gallery-family-care-support-drive.jpg" alt="Children and families at a care support activity" class="gallery-img real-photo" loading="lazy">
+                    <figcaption>Family Care Support Drive</figcaption>
+                </figure>
+                <figure class="gallery-item" data-category="environment">
+                    <img src="images/gallery-clean-community-jamaica.jpg" alt="Volunteers after a clean community project" class="gallery-img real-photo" loading="lazy">
+                    <figcaption>Clean Community Jamaica</figcaption>
+                </figure>
+                <figure class="gallery-item" data-category="outreach">
+                    <img src="images/gallery-community-center-refresh.jpg" alt="Community members repainting a building for a centre refresh project" class="gallery-img real-photo" loading="lazy">
+                    <figcaption>Community Centre Refresh</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Image pop-up preview (lightbox) controlled by JavaScript -->
+        <div class="lightbox" id="lightbox" aria-hidden="true">
+            <div class="lightbox-content">
+                <button type="button" id="closeLightbox" class="close-button">Close</button>
+                <img src="images/gallery-community-learning-corners.jpg" alt="Selected gallery preview" id="lightboxImage">
+                <p id="lightboxCaption"></p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer appearing on all five pages -->
+    <footer>
+        <p>&copy; 2026 Jamaica Community Development Association. All rights reserved.</p>
+        <p><a href="https://www.netacad.com/" target="_blank">Cisco Networking Academy</a> is a helpful external learning resource for web and IT skills.</p>
+    </footer>
+
+    <!-- JavaScript used for menu, filtering, gallery preview and form validation -->
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - JCDA</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header introducing the organization on all five pages -->
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo-link" aria-label="Go to JCDA Home Page">
+                <img src="images/logo-circle-jcda.png" alt="Jamaica Community Development Association logo" class="logo">
+            </a>
+            <div>
+                <h1>Jamaica Community Development Association</h1>
+                <p>Building stronger Jamaican communities through service, education and outreach.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Menu linking all five pages together -->
+    <button class="menu-button" id="menuButton" type="button" aria-label="Open or close navigation menu">☰ Menu</button>
+    <nav id="mainNav">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html" class="">About Us</a>
+        <a href="events.html" class="">Events</a>
+        <a href="projects.html" class="">Projects/Gallery</a>
+        <a href="contact.html" class="">Contact</a>
+    </nav>
+
+    <main>
+        <!-- Hero Banner on Home Page with welcome message and call-to-action buttons -->
+        <section class="hero-section">
+            <h2>Welcome to JCDA</h2>
+            <p>
+                The Jamaica Community Development Association (JCDA), is a non-profit organization
+                that supports community improvement through educational programmes, youth initiatives, environmental
+                projects and public outreach activities.
+            </p>
+            <div class="image-navigation">
+                <img src="images/hero-index-jcda.png" alt="JCDA banner showing community development activities in Jamaica" width="900" height="360" class="real-photo banner-photo">
+                <a class="image-side image-left" href="contact.html" aria-label="Previous page: Contact" title="Previous page: Contact">
+                    <span>‹ Contact</span>
+                </a>
+                <a class="image-side image-right" href="about.html" aria-label="Next page: About Us" title="Next page: About Us">
+                    <span>About Us ›</span>
+                </a>
+            </div>
+            <p class="hero-note">Tip: Click the left side of the image to go to Contact, or click the right side to go to About Us.</p>
+            <div class="button-row">
+                <a href="events.html" class="button-link">View Upcoming Events</a>
+                <a href="projects.html" class="button-link secondary-button">Explore Projects</a>
+            </div>
+        </section>
+
+        <!-- JCDA Mission/Objectives -->
+        <section>
+            <h2>Our Mission</h2>
+            <p>
+                To strengthen communities across Jamaica by creating practical programmes that support youth,
+                uplift families, improve shared spaces, protect the environment and encourage citizens to work
+                together for lasting community growth.
+            </p>
+            <ul>
+                <li>Create practical programmes that support youth development and community learning.</li>
+                <li>Uplift families through outreach, assistance and people-centred support.</li>
+                <li>Improve shared spaces through cleanup, beautification and local development projects.</li>
+                <li>Protect the environment while encouraging citizens to work together for lasting growth.</li>
+            </ul>
+        </section>
+
+        <!-- Highlight of upcoming projects/events. Includes a Call-to-Action button that leads to the Events page -->
+        <section>
+            <h2>Featured Event</h2>
+            <article class="feature-card">
+                <img src="images/event-cleanup-tree-planting.jpg" alt="Volunteers planting a tree at a community cleanup and tree planting day" class="card-image">
+                <h3>Community Cleanup and Tree Planting Day</h3>
+                <p><strong>Date:</strong> August 1, 2026</p>
+                <p><strong>Location:</strong> Portmore Community Park, St. Catherine</p>
+                <p>
+                    Volunteers will assist with community cleanup, public education and tree planting. This event supports
+                    JCDA's goal of creating cleaner and greener public spaces.
+                </p>
+                <a href="events.html" class="text-link">See all events</a>
+            </article>
+        </section>
+
+        <section>
+            <h2>Community Focus Areas</h2>
+            <div class="card-row">
+                <div class="card">
+                    <h3>Education</h3>
+                    <p>Workshops, school support and learning resources for children and adults.</p>
+                </div>
+                <div class="card">
+                    <h3>Youth Development</h3>
+                    <p>Skills training, mentorship and positive activities for young people.</p>
+                </div>
+                <div class="card">
+                    <h3>Environment</h3>
+                    <p>Cleanups, tree planting and awareness activities that protect local spaces.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer appearing on all five pages -->
+    <footer>
+        <p>&copy; 2026 Jamaica Community Development Association. All rights reserved.</p>
+        <p><a href="https://www.netacad.com/" target="_blank">Cisco Networking Academy</a> is a helpful external learning resource for web and IT skills.</p>
+    </footer>
+
+    <!-- JavaScript used for menu, filtering, gallery preview and form validation -->
+    <script src="js/script.js"></script>
+</body>
+</html>
